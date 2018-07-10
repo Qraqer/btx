@@ -1,0 +1,59 @@
+.horizontal-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orangeButton {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-radius: unset;
+}
+.orangeButton,
+.orangeButton:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.orangeButton:hover {
+  background-color: #ff9933;
+}
+.social-wrap {
+  padding: 15px 0;
+}
+.bx-share-icon {
+  padding: 0 5px;
+}
+.share-text {
+  color: #726756;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+.social-cirlce-wrap {
+  height: 40px;
+  width: 40px;
+}
+.social-cirlce-wrap a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #726756 !important;
+  color: #ffffff !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.social-cirlce-wrap a:hover,
+.social-cirlce-wrap a:focus {
+  background-color: #ff6600 !important;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

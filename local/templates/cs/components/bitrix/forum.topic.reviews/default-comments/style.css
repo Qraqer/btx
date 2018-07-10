@@ -1,0 +1,86 @@
+.horizontal-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orangeButton {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-radius: unset;
+}
+.orangeButton,
+.orangeButton:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.orangeButton:hover {
+  background-color: #ff9933;
+}
+.review-unath-block {
+  color: #ffffff;
+  background-color: #726756;
+  padding: 15px 0;
+  margin: 25px 0 0 0 !important;
+}
+.review-unath-block .reg-message {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 20px;
+}
+.review-unath-block .reg-button {
+  background-color: #ff6600;
+  padding: 10px;
+  text-align: center;
+}
+.review-unath-block .reg-button a {
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.review-unath-block .reg-button a,
+.review-unath-block .reg-button a:hover {
+  color: #ffffff;
+}
+.answer {
+  padding: 25px 15px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 10px -3px;
+}
+.answer .name-and-date {
+  padding-bottom: 10px;
+}
+.answer .name {
+  font-weight: bold;
+}
+.answer .date {
+  padding-left: 15px;
+}
+.answer .reviews-post-reply-buttons {
+  padding-top: 10px;
+}
+.answer .reviews-post-reply-buttons a {
+  color: #726756;
+  text-decoration: underline;
+  font-weight: bold;
+  padding-right: 15px;
+}
+.reviews-reply-buttons input {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-radius: unset;
+}
+.reviews-reply-buttons input,
+.reviews-reply-buttons input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.reviews-reply-buttons input:hover {
+  background-color: #ff9933;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+@import '../../../../less/variables';
+@import '../../../../less/functions';
+
+.default-item.catalog-item {
+  padding: 50px 15px 25px 15px;
+
+  max-height: 370px;
+  height: 370px !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .description {
+    text-align: center;
+    .setTextSize(20);
+  }
+
+  .warranty {
+    .setColor(@beige-accent);
+  }
+}

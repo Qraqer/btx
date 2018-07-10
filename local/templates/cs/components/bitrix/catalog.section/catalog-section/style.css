@@ -1,0 +1,14 @@
+.catalog-section-list .front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.company-item .item-info-row {
+  height: unset !important;
+}
+.catalog-offer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */

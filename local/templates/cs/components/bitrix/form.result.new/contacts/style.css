@@ -1,0 +1,31 @@
+.horizontal-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orangeButton {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-radius: unset;
+}
+.orangeButton,
+.orangeButton:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.orangeButton:hover {
+  background-color: #ff9933;
+}
+form[name="contacts"] {
+  background-color: #e2e0d4;
+  padding: 15px;
+}
+form[name="contacts"] input,
+form[name="contacts"] textarea {
+  background-color: #f5f4f0;
+}
+/*# sourceMappingURL=style.css.map */

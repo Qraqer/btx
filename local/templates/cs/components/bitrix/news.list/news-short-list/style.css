@@ -1,0 +1,29 @@
+.horizontal-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orangeButton {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-radius: unset;
+}
+.orangeButton,
+.orangeButton:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.orangeButton:hover {
+  background-color: #ff9933;
+}
+.news-short-list .news-short-list-item .image {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

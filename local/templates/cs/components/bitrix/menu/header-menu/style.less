@@ -1,0 +1,76 @@
+@import "../../../../less/variables";
+@import "../../../../less/functions";
+
+.header-menu {
+  @media (max-width: @menu-toggle-down) {
+    width: unset;
+  }
+
+  justify-content: space-between;
+
+  .direction {
+    padding: 0 15px;
+    flex-direction: row;
+
+    @media (max-width: @menu-toggle-down) {
+      flex-direction: column;
+    }
+  }
+
+  .menu-item {
+    padding: 5px 15px;
+
+    @media (max-width: @lg-down) {
+      padding: 5px 0;
+    }
+
+    flex-grow: 2;
+
+    @media (min-width: @menu-toggle-down) {
+      text-align: center;
+
+      &:first-of-type {
+        text-align: left;
+      }
+
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+
+    @media (max-width: @menu-toggle-up) {
+      padding: 5px 15px;
+      text-align: left;
+    }
+
+    &.active {
+      .setBackgroundColor(@orange);
+
+      a:hover {
+        .setColor(@white);
+      }
+
+      &.extra-menu {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          background: url('images/extra-menu.png');
+          width: image-width('images/extra-menu.png');
+          height: image-height('images/extra-menu.png');
+
+          .horizontalCenter();
+          bottom: -7px; // Как через unit(width, 'px') сделать отрицательное значение?
+          z-index: 2;
+        }
+      }
+    }
+
+  }
+
+  a {
+    text-transform: uppercase;
+    color: @white
+  }
+}

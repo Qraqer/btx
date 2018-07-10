@@ -1,0 +1,149 @@
+@import 'variables';
+@import 'functions';
+
+.orange-text {
+  .setColor(@orange);
+}
+
+.orange-accent-text {
+  .setColor(@orange-accent);
+}
+
+.beige-text {
+  .setColor(@beige);
+}
+
+.beige-accent-text {
+  .setColor(@beige-accent);
+}
+
+.black-text {
+  .setColor(@black);
+}
+
+.grey-text {
+  .setColor(@grey);
+}
+
+.white-text {
+  .setColor(@white);
+
+}
+
+// Фон
+
+.orange-block {
+  .setBackgroundColor(@orange);
+}
+
+.orange-accent-block {
+  .setBackgroundColor(@orange-accent);
+}
+
+.beige-block {
+  .setBackgroundColor(@beige);
+}
+
+.beige-accent-block {
+  .setBackgroundColor(@beige-accent);
+}
+
+.black-block {
+  .setBackgroundColor(@black);
+}
+
+.grey-block {
+  .setBackgroundColor(@grey);
+}
+
+.white-block {
+  .setBackgroundColor(@white);
+}
+
+// Визуализация ссылок
+
+a.button {
+
+  transition: all 100ms ease;
+  display: block;
+  border: 2px solid;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 15px;
+
+  &.orange-button {
+    .setButtonColor(@orange);
+  }
+
+  &.orange-accent-button {
+    .setButtonColor(@orange-accent);
+  }
+
+  &.beige-button {
+    .setButtonColor(@beige);
+  }
+
+  &.beige-accent-button {
+    .setButtonColor(@beige-accent);
+  }
+
+  &.black-button {
+    .setButtonColor(@black);
+  }
+
+  &.grey-button {
+    .setButtonColor(@grey);
+  }
+
+  &.white-button {
+    .setButtonColor(@white);
+  }
+}
+
+@media (max-width: @md-down) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: @sm-down) {
+  .col-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: @md-down) {
+  .col-sm-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: @lg-down) {
+  .col-xl-hidden {
+    display: none;
+  }
+}
+
+.col-visible {
+  display: none !important;
+  @media (max-width: @sm-down) {
+    display: block !important;
+  }
+}
+
+.col-sm-visible {
+  display: none !important;
+  @media (max-width: @md-down) {
+    display: block !important;
+  }
+}
+
+.col-xl-visible {
+  display: none !important;
+  @media (max-width: @lg-down) {
+    display: block !important;
+  }
+}
+

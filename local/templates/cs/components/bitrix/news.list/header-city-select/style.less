@@ -1,0 +1,29 @@
+@import '../../../../less/variables';
+@import '../../../../less/functions';
+
+.header-city-select {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  button {
+    padding-left: 0;
+    .setColor(@beige-accent);
+
+   .disableBootstrapInputBorder;
+  }
+
+  a {
+    .setColor(@beige-accent);
+
+    &:hover {
+      .setBackgroundColor(@beige);
+    }
+
+    &:focus {
+      .setColor(@orange);
+    }
+  }
+}

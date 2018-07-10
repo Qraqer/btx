@@ -1,0 +1,77 @@
+@import "../../../../less/variables";
+@import "../../../../less/functions";
+
+.review-unath-block {
+
+  .setColor(@white);
+  .setBackgroundColor(@beige-accent);
+  padding: 15px 0;
+
+  margin: 25px 0 0 0 !important;
+
+  .reg-message {
+    padding: 10px;
+    .setTextSize(20);
+  }
+
+  .reg-button {
+    .setBackgroundColor(@orange);
+    padding: 10px;
+    text-align: center;
+
+    a {
+      .setTextSize(18);
+      text-transform: uppercase;
+
+      &, &:hover {
+        .setColor(@white);
+      }
+
+    }
+
+  }
+}
+
+.reviews-block-container {
+
+}
+
+.answer {
+  padding: 25px 15px;
+
+  .setBackgroundColor(@white);
+  margin-bottom: 10px;
+
+  .defaultBoxShadow();
+
+  .name-and-date {
+    padding-bottom: 10px;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .date {
+    padding-left: 15px;
+  }
+
+  .reviews-post-reply-buttons {
+    padding-top: 10px;
+
+    a {
+      .setColor(@beige-accent);
+      text-decoration: underline;
+
+      font-weight: bold;
+      padding-right: 15px;
+    }
+  }
+
+}
+
+.reviews-reply-buttons {
+  input {
+    .orangeButton;
+  }
+}

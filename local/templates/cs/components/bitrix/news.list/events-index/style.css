@@ -1,0 +1,44 @@
+.horizontal-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orangeButton {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-radius: unset;
+}
+.orangeButton,
+.orangeButton:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.orangeButton:hover {
+  background-color: #ff9933;
+}
+.events-index .title {
+  color: #f5f4f0;
+}
+.events-index .link-all .button:hover {
+  color: #726756;
+}
+.events-index .in-hr {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 25px 0;
+}
+.events-index .in-hr hr {
+  flex-grow: 1;
+  background-color: #f5f4f0;
+  margin: auto;
+}
+.events-index .in-hr .title {
+  color: #f5f4f0;
+  padding: 0 15px;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

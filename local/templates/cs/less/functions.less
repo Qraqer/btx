@@ -1,0 +1,104 @@
+.setTitle(@size) {
+  font-family: Fira, sans-serif;
+  .setTextSize(@size);
+}
+
+.setTextSize(@size) {
+  font-size: unit(@size, px);
+  line-height: unit(@size, px);
+}
+
+.setColor(@color) {
+  color: @color;
+}
+
+.setBackgroundColor(@color) {
+  background-color: @color;
+}
+
+.setButtonColor(@color) {
+  .setColor(@color);
+  border: 2px solid @color;
+
+  &:hover {
+    .setBackgroundColor(@color);
+  }
+}
+
+.setHoverColor(@color) {
+  &:hover {
+    .setColor(@color);
+  }
+}
+
+.disableBootstrapInputBorder() {
+  &, &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.inHr(@color) {
+  .in-hr {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 25px 0;
+
+    hr {
+      flex-grow: 1;
+      background-color: @color;
+      margin: auto;
+    }
+
+    .title {
+      color: @color;
+      padding: 0 15px;
+      margin: 0;
+    }
+  }
+}
+
+.verticalCenter() {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.horizontalCenter()
+{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.defaultBoxShadow() {
+  box-shadow: 0 1px 10px -3px;
+}
+
+.circleBackground()
+{
+  max-width: 27px;
+  height: 27px;
+  width:27px;
+
+  text-align: center;
+  border-radius: 27px;
+}
+
+.horizontal-center {
+  .horizontalCenter();
+}
+
+.vertical-center {
+  .verticalCenter();
+}
+
+.orangeButton {
+  .disableBootstrapInputBorder();
+  .setColor(@white);
+  .setBackgroundColor(@orange);
+
+  &:hover {
+    .setBackgroundColor(@orange-accent);
+  }
+  border-radius: unset;
+}
