@@ -16,7 +16,7 @@ class Catalog extends ModelAbstract
     {
         // Родительский падает без ошибок
         // Неясно почему
-        return array();
+        return array('POWER_HEAT', 'POWER_COOL', 'POWER_INTAKE');
 
     }
 
